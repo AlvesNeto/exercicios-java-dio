@@ -1,0 +1,13 @@
+void main(String[] args) {
+
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Digite seu nome:");
+    String nome = sc.next();
+    System.out.println("Digite o ano de nascimento:");
+    int ano = sc.nextInt();
+    int anoAtual = LocalDate.now().getYear();
+
+
+    System.out.println("Olá "+nome+" você tem "+(anoAtual-ano)+" anos");
+
+}
