@@ -1,3 +1,6 @@
+1 - Escreva um código que receba o nome e o ano de nascimento de alguém e 
+imprima na tela a seguinte mensagem: "Olá 'Fulano' você tem 'X' anos"
+
 void main(String[] args) {
 
     Scanner sc = new Scanner(System.in);
@@ -10,4 +13,60 @@ void main(String[] args) {
 
     System.out.println("Olá "+nome+" você tem "+(anoAtual-ano)+" anos");
 
+}
+
+2- Escreva um código que receba o tamanho do lado de um quadrado,
+ calcule sua área e exiba na tela
+
+fórmula: área=lado X lado"
+
+void main(String[] args) {
+
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Digite o tamanho do lado do quadrado:");
+    int l = sc.nextInt();
+
+    int area = l * l;
+
+    System.out.println("A área do quadrado é: "+area);
+
+
+}
+
+3- Escreva um código que receba a base e a alturade um retângulo, calcule sua área e exiba na tela
+
+fórmula: área=base X altura
+void main(String[] args) {
+
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Digite o tamanho da base do retangulo:");
+    int base = sc.nextInt();
+    System.out.println("Digite o tamanho da altura do retangulo:");
+    int altura = sc.nextInt();
+
+    int area = base * altura;
+
+    System.out.println("A área do retangulo é: "+area);
+}
+
+4 - Escreva um código que receba o nome e a idade de 2 pessoas e imprima a diferença de idade entre elas
+
+void main(String[] args) {
+
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Pessoa 1 - Nome:");
+    String nome = sc.next();
+    System.out.println("Pessoa 1 - Idade:");
+    int idade = sc.nextInt();
+
+    System.out.println("Pessoa 2 - Nome:");
+    String nome2 = sc.next();
+    System.out.println("Pessoa 2 - Idade:");
+    int idade2 = sc.nextInt();
+
+    int diferenca = Math.abs(idade-idade2);
+
+    System.out.println("A diferença de idade entre " + nome + " e " + nome2 + " é: " + diferenca);
+
+    sc.close();
 }
