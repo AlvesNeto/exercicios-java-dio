@@ -1,0 +1,12 @@
+# Arquivos compilados Java
+*.class
+
+# Logs
+*.log
+
+# IDEs
+.idea/
+.vscode/
+
+# Sistema operacional
+.DS_Store
